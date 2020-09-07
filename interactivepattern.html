@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" title="Default">
+
+<title>Luke Butcher</title>
+</head>
+<body>
+
+<main class="flex-container">
+<nav class="flex-item header">
+
+      <ul class="nav">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="curriculumvitae.html">Curriculum Vitae</a></li>
+        <li><a class="nav active" href="projects.html">Projects</a></li>
+        <li><a class="nav" href="contact.html">Contact Me</a></li>
+        <li> <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+              <img src = "media/github-10-24.png"
+                alt="GitHub icon" /> </a>
+        <li> <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+                <img src = "media/linkedin-5-24.png"
+                alt="LinkedIn icon" /> </a>
+      </ul>
+
+  </nav>
+  <nav class="sidenavbtn">
+  <span aria-label="Open side navigation" class="openbtn" onclick="openNav()">|||</span>
+</nav>
+  <nav class="sidenav">
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="curriculumvitae.html">Curriculum Vitae</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Me</a>
+
+      <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+           <img src = "media/github-10-24.png"
+             alt="GitHub icon" /> </a>
+      <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+             <img src = "media/linkedin-5-24.png"
+             alt="LinkedIn icon" /> </a>
+
+    </nav>
+  </nav>
+
+
+  <section class="flex-item main">
+
+
+    <section class="projectDemoText">
+      <article>
+      <span class="projectDemoVid">
+        <video controls="" muted="" autoplay>
+          <source src="media/interactivepatterndemo.mp4" type="video/mp4">
+          <source src="media/interactivepatterndemo.ogv" type="video/ogg">
+          <source src="media/interactivepatterndemo.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+      </span>
+    <h3>Summary</h3>
+    <p>This is an interactive Python pattern displaying program, created as my first programming project at university.</p>
+    <h3>The task</h3>
+      <p>The task for this project was to  generate a predefined pattern based on the scale and colours defined by the user
+         as a demonstartion of skill for my introduction to programing unit in my fisrt year of university.
+       </article>
+         <article>
+    <h3>Goals</h3>
+      <ul>
+
+        <li>The program should begin by prompting the user using a text-based interface to enter the patchwork size the desired three colours
+        <li>The program must ensure are all the colours are different.</li>
+        <li>The program’s user interface should be easy to use, friendly and robust.</li>
+        <li>On entering invalid data, the user should be re-prompted until the entered data is valid</li>
+        <li>A patchwork sample is made up of patches of two different designs and three colours. </li>
+        <li>Patchworks are square and can be of three different sizes: 5 x 5, 7 x 7 and 9 x 9.</li>
+        <li>The program must draw the patches using the facilities provided in the graphics module (Line, Circle etc.),</li>
+        <li>The program must not use bitmapped images</li>
+
+      </ul>
+    <h3>Stretch goals</h3>
+        <ul>
+          <li>After the patchwork design has been drawn, the program must allow the user to change the colour of patches by clicking on them with the mouse.</li>
+          <li>The colours must cycle in the order they were entered by the user</li>
+          <li>The user must be able to make as many colour changes to as many patches as they wish</li>
+        </ul>
+    <h3>Results</h3>
+
+      <p>Each goal was met including the stretch goals resulting in an overall grade of 98% for this project upon presentation.</p>
+
+    <h3>Reflection</h3>
+      <p> This project was very enjoyable, in particular I enjoyed going back over the project once
+         I had a working framework and finding ways to improve the robustness of the user
+         interface</p>
+</article>
+  </section>
+  </section>
+    <footer class="flex-item footer">
+
+        </footer>
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</main>
+</body>
+</html>

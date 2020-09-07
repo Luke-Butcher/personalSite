@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" title="Default">
+
+<title>Luke Butcher</title>
+</head>
+<body>
+
+<main class="flex-container">
+<nav class="flex-item header">
+
+      <ul class="nav">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav active" href="curriculumvitae.html">Curriculum Vitae</a></li>
+        <li><a class="nav" href="projects.html">Projects</a></li>
+        <li><a class="nav" href="contact.html">Contact Me</a></li>
+        <li> <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+              <img src = "media/github-10-24.png"
+                alt="GitHub icon" /> </a>
+        <li> <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+                <img src = "media/linkedin-5-24.png"
+                alt="LinkedIn icon" /> </a>
+      </ul>
+
+  </nav>
+  <nav class="sidenavbtn">
+  <span aria-label="Open side navigation" class="openbtn" onclick="openNav()">|||</span>
+</nav>
+  <nav class="sidenav">
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="curriculumvitae.html">Curriculum Vitae</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Me</a>
+
+      <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+           <img src = "media/github-10-24.png"
+             alt="GitHub icon" /> </a>
+      <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+             <img src = "media/linkedin-5-24.png"
+             alt="LinkedIn icon" /> </a>
+    </nav>
+  </nav>
+
+<section class="flex-item main">
+
+<p class="cv">
+  <img src="media/LukeButcherCV-1.png"
+  alt="page one of Luke butcher CV"/>
+
+</p>
+<p class="cv">
+
+ <a href="curriculumvitae.html">
+
+ </a>
+  <img src="media/LukeButcherCV-2.png"
+  alt="page one of Luke butcher CV"/>
+</p>
+<aside class="downloadlink">
+<form method="get" action="media/CV/LukeButcherCV.pdf">
+ <button type="submit">Download CV</button>
+ </form>
+ </aside>
+
+  </form>
+  </aside>
+
+  </section>
+  <footer class="flex-item footer">
+
+    <section class="container">
+      <form method="post" action="contact.php">
+        <h3>Quick message</h3>
+
+
+
+          <label for="Name">Name</label>
+          <input type="text" id="Name" name="Name" placeholder="Name">
+
+          <label for="Email">Email</label>
+          <input type="text" id="Email" name="Email" placeholder="Email">
+
+
+          <label for="Message">Message</label>
+          <textarea id="Message" name="Message" placeholder="" style="height:200px"></textarea>
+
+          <input type="submit" name="submit" value="submit">
+
+        </form>
+
+    </section>
+
+  </footer>
+
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</main>
+</body>
+</html>

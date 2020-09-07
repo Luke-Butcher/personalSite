@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" title="Default">
+
+<title>Luke Butcher</title>
+</head>
+<body>
+
+<main class="flex-container">
+<nav class="flex-item header">
+
+
+      <ul class="nav">
+
+        <li><a class="nav active" href="index.html">Home</a></li>
+        <li><a class="nav" href="curriculumvitae.html">Curriculum Vitae</a></li>
+        <li><a class="nav" href="projects.html">Projects</a></li>
+        <li><a class="nav" href="contact.html">Contact Me</a></li>
+        <li> <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+              <img src = "media/github-10-24.png"
+                alt="GitHub icon" /> </a>
+        <li> <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+                <img src = "media/linkedin-5-24.png"
+                alt="LinkedIn icon" /> </a>
+
+      </ul>
+
+  </nav>
+  <nav class="sidenavbtn">
+  <span aria-label="Open side navigation" class="openbtn" onclick="openNav()">|||</span>
+</nav>
+  <nav class="sidenav">
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="curriculumvitae.html">Curriculum Vitae</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Me</a>
+
+       <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+            <img src = "media/github-10-24.png"
+              alt="GitHub icon" /> </a>
+       <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+              <img src = "media/linkedin-5-24.png"
+              alt="LinkedIn icon" /> </a>
+
+    </nav>
+  </nav>
+
+  <section class="flex-item main">
+
+<aside class="homesignature"> Luke Butcher, Software Engineer </aside>
+    <p class="img">
+      <a href="curriculumvitae.html">
+      <img src = "media/cv.png"
+             alt = "curriculum vitae icon"/>
+
+             <span class="overlayText">Curriculum Vitae</span>
+           </a>
+         </p>
+
+         <p class="img">
+      <a href = "projects.html">
+    <img src = "media/project.png"
+         alt = "projects icon"
+         />
+          <span class="overlayText">Projects</span>
+       </a>
+    </p>
+
+    <p class="img">
+      <a href = "contact.html">
+        <img src = "media/contact2.png"
+             alt = "contact me icon"    />
+             <span class="overlayText">Contact me</span>
+           </a>
+         </p>
+
+
+<aside class="homeQuote">
+<p>"Any sufficiently advanced technology is indistinguishable from magic."</p>
+<p> -Arthur C. Clarke </p>
+</aside>
+
+</section>
+  <footer class="flex-item footer">
+    <section class="container">
+      <h3>Quick Message</h3>
+      <form method="post" action="contact.php">
+
+
+
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Name">
+
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Email">
+
+
+        <label for="Message">Message</label>
+        <textarea id="Message" name="Message" placeholder="" style="height:200px"></textarea>
+
+        <input type="submit" name="submit" value="submit">
+
+      </form>
+    </section>
+
+  </footer>
+  <script>
+
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</main>
+</body>
+</html>
