@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" title="Default">
+
+<title>Luke Butcher</title>
+</head>
+<body>
+
+<main class="flex-container">
+<nav class="flex-item header">
+
+      <ul class="nav">
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="curriculumvitae.html">Curriculum Vitae</a></li>
+        <li><a class="nav active" href="projects.html">Projects</a></li>
+        <li><a class="nav" href="contact.html">Contact Me</a></li>
+        <li> <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+              <img src = "media/github-10-24.png"
+                alt="GitHub icon" /> </a>
+        <li> <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+                <img src = "media/linkedin-5-24.png"
+                alt="LinkedIn icon" /> </a>
+      </ul>
+
+  </nav>
+  <nav class="sidenavbtn">
+  <span aria-label="Open side navigation" class="openbtn" onclick="openNav()">|||</span>
+</nav>
+  <nav class="sidenav">
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="curriculumvitae.html">Curriculum Vitae</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Me</a>
+
+      <a class="medianav"  href="https://github.com/Luke-Butcher"  target="_blank">
+           <img src = "media/github-10-24.png"
+             alt="GitHub icon" /> </a>
+      <a class="medianav"  href="https://www.linkedin.com/in/luke-butcher-4a45b968/" target="_blank">
+             <img src = "media/linkedin-5-24.png"
+             alt="LinkedIn icon" /> </a>
+
+    </nav>
+  </nav>
+
+
+  <section class="flex-item main">
+   <section class="projectDemoText">
+     <article>
+      <span class="projectDemoVid">
+
+        <video controls="" muted="" autoplay>
+          <source src="media/collisionsimulationdemo.mp4" type="video/mp4">
+          <source src="media/collisionsimulationdemo.ogv" type="video/ogg">
+          <source src="media/collisionsimulationdemo.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+      </span>
+    <h3>Summary</h3>
+    <p>This project was designed to develop object-oriented programming skills, including designing, documenting, testing and debugging of Java code as part of the introduction to programming unit.</p>
+    <h3>The task</h3>
+      <p>The simulation would model a pinball machine and the collisions of different objects with unique effects and end once a ball passes through the gap at the bottom of the machine.
+      </article>
+      <article>
+
+    <h3>Goals</h3>
+      <ul>
+
+        <li>Create walls, objects that are black in colour that are impassable to all other objects </li>
+        <li>Create ball type one, features, change direction when colliding with a wall, change speed when colliding with another ball.</li>
+        <li>Create the bumpers, Bumpers are static circular objects within the machine, which will always be grey in colour</li>
+        <li>Create the exit gap to end the simulation</li>
+        <li>Create ball type two, feature change colour when colliding with the edge, change size when colliding with a ball.</li>
+        <li>Create hole object, feature, balls will be removed if the fit inside the hole, glide over it if the do not.</li>
+        <li>Implement scoring system
+          <ul>
+            <li>Colliding with a wall - 1 point</li>
+            <li>Colliding with a bumper - 2 points</li>
+            <li>Colliding with another pinball - 5 points</li>
+            <li>Coming into contact with a hole - lose all points collected by that pinball</li>
+          </ul>
+        </li>
+
+        <li>Code quality based on: its overall structure (ensuring that the principles of object-oriented programming have been incorporated), its readability and structure, and the quality of the algorithms used.</li>
+
+      </ul>
+    <h3>Stretch goals</h3>
+        <ul>
+          <li>Display high score table at the end of the simulation</li>
+          <li>Documentation</li>
+
+        </ul>
+    <h3>Results</h3>
+
+      <p>Each goal was met including the stretch goals resulting in an overall grade of 100% for this project upon presentation.</p>
+
+    <h3>Reflection</h3>
+      <p> Collision detection was a lot of fun in particular I enjoyed working with a brief and being set lose to make the solution as however I saw best this was the first assessed project I had worked on with such a set up and it was immensely interesting researching the many different ways to approach the core problems. I found the layout of BlueJ to be very useful for showing class inheritance and dependencies it was quite satisfying reducing the dependencies and ensuring the inheritance was a simple logical flow of increasingly complex classes and having that graphical display showing the results. </p>
+
+</article>
+  </section>
+  </section>
+    <footer class="flex-item footer">
+
+          </footer>
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</main>
+</body>
+</html>
